@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.h1 {
+    color: rgb(129, 145, 222);
+    font-size: 45px;
+    text-decoration: underline;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.para {
+    color: white;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(8, 8, 61);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    color: white;
+}
+
+.heading {
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+
+}
+
+li a:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+body header i {
+    display: none !important;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.responsiveNav {
+    background-color: rgba(255, 255, 255, 0.189);
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    width: 120px;
+    transition: 0.5s;
+}
+
+
+.closeIcon {
+    padding: 22px 8px;
+
+}
+
+.closeIcon i {
+    font-size: 35px;
+    width: 0;
+}
+
+.responsiveNavBar {
+    display: block;
+}
+
+.responsiveNavBar ul {
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.responsiveNavBar ul li {
+    padding: 15px 0;
+}
+
+/* Section Home */
+
+#home {
+    display: flex;
+
+}
+
+.div {
+    width: 50%;
+    height: 80vh;
+}
+
+.div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left {
+    padding: 0 12px;
+}
+
+.left h1 {
+    display: block;
+    text-align: center;
+    font-size: 52px;
+}
+
+.left button {
+
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(6, 40, 70);
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-top: 15px;
+    padding: 8px 50px;
+    cursor: pointer;
+}
+
+.left button a {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+.right img {
+    width: 80%;
+    height: 90%;
+}
+
+.left span {
+    color: cadetblue;
+}
+
+#about p {
+    margin-bottom: 55px;
+    padding: 0 12px;
+}
+
+.percentages {
+    display: flex;
+    gap: 12px;
+
+}
+
+.percentage {
+    color: white;
+    text-align: center;
+
+    width: 33%;
+}
+
+.percentage .img {
+    background-color: white;
+    margin: auto;
+    height: 70%;
+    width: 33%;
+    border-radius: 50%;
+}
+
+.percentage p {
+    margin-top: 18px;
+    ;
+    font-size: 40px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.percentage .jsImg {
+    background-color: yellow;
+}
+
+#projects h1 {
+    margin-top: 28px;
+}
+
+
+.project {
+    margin-top: 58px;
+    width: 50%;
+}
+
+.project p {
+    padding: 0 5px;
+}
+
+body .percentage .proImg {
+    border-radius: 0;
+    width: 80%;
+    height: 300px;
+    position: relative;
+    border: 3px solid gold;
+}
+
+.project p a {
+    color: white;
+}
+
+.click {
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.233);
+    top: 0;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click a {
+    color: gold;
+    letter-spacing: 1px;
+    display: none;
+    font-size: 22px;
+}
+
+
+
+.project:hover .click {
+    height: 100%;
+}
+
+.project:hover .click a {
+    display: block;
+}
+
+#projects {
+    margin-bottom: 18px;
+}
+
+#contact h1 {
+    margin-top: 35px;
+}
+
+form {
+    color: white;
+}
+
+form input,
+textarea {
+    background-color: rgb(233, 225, 225);
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    padding: 3px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.inputFeild {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form label {
+    font-size: 22px;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 108px;
+}
+
+input[type="submit"] {
+    background-color: yellow;
+    color: rgb(129, 145, 222);
+    font-weight: 900 !important;
+    width: 160px;
+    background-color: rgb(8, 8, 61);
+    cursor: pointer;
+    padding: 5px 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+}
+
+footer {
+    margin-top: 18px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    background-color: rgb(8, 8, 61);
+    border-top: 1px solid rgb(31, 66, 97);
+    color: rgb(129, 145, 222);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:755px) {
+
+    nav {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    body header i {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:1233px) {
+
+
+    .left h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:955px) {
+
+
+    .left h1 {
+        font-size: 40px;
+    }
+
+    .right img {
+        width: 70%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width:858px) {
+
+
+    #home {
+        flex-direction: column;
+    }
+
+    .div {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .rigth img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .left {
+        padding: 0;
+    }
+
+    .percentages {
+        flex-direction: column;
+    }
+
+    .percentage {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    form {
+        padding: 0 30px;
+    }
+
+}
