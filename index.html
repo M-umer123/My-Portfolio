@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <h1>Umer's Portfolio</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <i onclick="showNav()" class="fa-solid fa-bars"></i>
+
+        <div class="responsiveNav">
+            <div class="closeIcon" onclick="dissappearNav()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <nav class="responsiveNavBar">
+                <ul>
+                    <li><a onclick="removeNav()" href="#home">Home</a></li>
+                    <li><a onclick="removeNav()" href="#about">About</a></li>
+                    <li><a onclick="removeNav()" href="#projects">Projects</a></li>
+                    <li><a onclick="removeNav()" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="left div">
+                <h1>Hi, My name is <span>M.Umer</span></h1>
+                <h1>I'm a <span>Web Designer</span></h1>
+                <button><a  href="My Portfolio/M.Umer.pdf">Download C.V</a></button>
+            </div>
+            <div class="right div">
+                <img src="images/img1.png" alt="">
+            </div>
+        </section>
+
+        <section id="about">
+            <h1 class="h1">About Me</h1>
+            <p class="para">I'm a web designer currently pursuing a diploma in aptech intitute North Nazimabad. I am inter graduate, I'm seeking an internship to gain experience in my field.</p>
+
+            <div class="percentages">
+
+                <div class="percentage">
+                    <div class="img">
+                        <img src="images/html_Image-removebg-preview.png" alt="">
+                    </div>
+                    <p>70%</p>
+                </div>
+
+                <div class="percentage">
+                    <div class="img">
+                        <img src="images/css_image-removebg-preview.png" alt="">
+                    </div>
+                    <p>50%</p>
+                </div>
+
+                <div class="percentage">
+                    <div class="img jsImg">
+                        <img src="images/js_img-removebg-preview.png" alt="">
+                    </div>
+                    <p>30%</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1 class="h1">Projects</h1>
+            <div class="percentages">
+
+                <div class="percentage project">
+                    <div class="img proImg">
+                        <img src="images/project Image 1.PNG" alt="">
+
+                        <div class="click">
+                            <a target="_blank" href="https://m-umer123.github.io/Project-1-BS/"> Click to See the Website</a>
+                        </div>
+
+                    </div>
+                    <p><a target="_blank" href="https://m-umer123.github.io/Project-1-BS/">Made using BootStrap</a></p>
+                </div>
+
+                <div class="percentage project">
+                    <div class="img proImg">
+                        <img src="images/project Image 2.PNG" alt="">
+
+                        <div class="click">
+
+                            <a target="_blank" href="https://m-umer123.github.io/Project-2-Html-CSS-Js/"> Click to See the Website</a>
+                        </div>
+                    </div>
+                    <p><a target="_blank" href="https://m-umer123.github.io/Project-2-Html-CSS-Js/"> Made using Html CSS & JS</a></p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="php_project">
+            <h1 class="h1">Php Project</h1>
+            <div class="proImg img php">
+                <a target="_blank" href="crud-project.42web.io"><img src="images/php.PNG" alt="project image"></a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="h1">Contact Me</h1>
+
+            <form>
+                <div class="inputs">
+
+                    <div class="inputFeild">
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text">
+                    </div>
+
+                    <div class="inputFeild">
+                        <label for="email">Your Email</label>
+                        <input type="text">
+                    </div>
+
+                </div>
+
+                <label for="message">Your Message</label>
+                <textarea id="message"></textarea>
+                <div class="btn">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Made by M.Umer</p>
+    </footer>
+
+
+
+
+</body>
+
+
+</script>
+
+</body>
+
+</html>
